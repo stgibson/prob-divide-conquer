@@ -3,7 +3,7 @@ function countZeroes(nums) {
   let start = 0;
   let end = nums.length - 1;
   while (start <= end) {
-    const middle = Math.floor((beginning + end) / 2);
+    const middle = Math.floor((start + end) / 2);
     if (nums[middle] === 0) {
       // if 0 is first num or comes after 1, found first 0
       if (middle === 0 || nums[middle - 1] === 1) {
